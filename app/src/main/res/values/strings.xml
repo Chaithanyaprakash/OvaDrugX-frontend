@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OvaDrugX</string>
+    <string name="confirm_finalization_title">Confirm Finalization</string>
+    <string name="confirm_finalization_message">This action will digitally sign and permanently lock the report. You will not be able to edit it afterward.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_and_sign">Confirm &amp; Sign</string>
+    <string name="report_signed_success">Report Signed Successfully</string>
+    <string name="report_signed_message">The report has been digitally signed, secured, and locked. You may now view or share the finalized version.</string>
+    <string name="view_signed_report">View Signed Report</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="share_report">Share Report</string>
+    <string name="return_to_dashboard">Return to Dashboard</string>
+</resources>

@@ -1,0 +1,98 @@
+--------- beginning of main
+03-10 16:15:33.568  5412  5450 I Bugle   : DatabaseHelperBasic.doInitializationTraced() returned SQLiteDatabase: /data/user/0/com.google.android.apps.messaging/databases/bugle_db
+03-10 16:15:33.569  5412  5450 I Bugle   : DatabaseHelperBasic.doInitializationTraced returned SQLiteDatabase: /data/user/0/com.google.android.apps.messaging/databases/bugle_db
+03-10 16:15:33.578  5412  5452 I BugleSystemBindingManag: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+03-10 16:15:33.580  5412  5452 I BugleTransport: Not kicking off update transport registration because RCS provisioning change has not been received.
+03-10 16:15:33.581  5412  5439 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=143330 ]
+03-10 16:15:33.582  5412  5449 I BugleRcsEngine: getConfigServerUrl without simId [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=143339 ]
+03-10 16:15:33.583  5412  5439 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=143330 ]
+03-10 16:15:33.583  5412  5450 I BugleRcsEngine: getConfigServerUrl without simId [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=143340 ]
+03-10 16:15:33.694  5412  5450 I BugleRcsEngine: Using MCC based URL [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=143340 ]
+03-10 16:15:33.700  5412  5450 I ProvisioningServerUtil: ProvisioningServerUtil: Getting mccmnc from SimPreferences.
+03-10 16:15:33.708  5412  5449 I BugleRcsEngine: Using MCC based URL [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=143339 ]
+03-10 16:15:33.714  5412  5449 I ProvisioningServerUtil: ProvisioningServerUtil: Getting mccmnc from SimPreferences.
+03-10 16:15:33.723  5412  5486 I BugleDataModel: 2 not running because already up to date, upgradeCommand: EXECUTE_UPGRADE, version: 4
+03-10 16:15:33.731  5412  5506 I BugleDataModel: 4 not running because already up to date, upgradeCommand: EXECUTE_UPGRADE, version: 1
+03-10 16:15:33.736  5412  5484 I BugleDataModel: 3 not running because already up to date, upgradeCommand: EXECUTE_UPGRADE, version: 2
+03-10 16:15:33.827  5412  5452 I BugleSatellite: Processing Phenotype flag changes.
+03-10 16:15:33.829  5412  5489 I BugleSatellite: Reporting to Telephony: SMS supported = true
+03-10 16:15:34.021  5031  5356 W HeroManager: mediaPreload.prefetchInternal : source: Type: DASH_VOD
+03-10 16:15:34.021  5031  5356 W HeroManager: 	Id: 3843256458113152319_74381596284
+03-10 16:15:34.021  5031  5356 W HeroManager: 	Uri: https://instagram.fmaa5-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQOIOtf_1rGoh1ttQW0PEWvWc3-6biO12QVWbpSyFbHA0VcCkwqJbPlXVol4B7xUW8R92nnJNLXVM-Ql6R3vL5oH.mp4?strext=1&_nc_cat=111&_nc_oc=AdlvptXDBOdU-m1f2hfjDcrD4LQFjlWuYjiKMFy7tva9UaRQmVPhdOq6hLNhIE_Z3e1KKw1pS7UIlzy77GLKRMw5&_nc_sid=5e9851&_nc_ht=instagram.fmaa5-1.fna.fbcdn.net&_nc_ohc=30u2rQM_3-YQ7kNvwHztmew&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4NzkwODI4MjU0NzYyODUsImFzc2V0X2FnZV9kYXlzIjo4LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=w7LDlRNtxx1-Z2af8PAZvA&_nc_ss=1a&_nc_zt=28&vs=f8cd0d2182565c63&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTHZzZFNaR1B5NnJGMGdEQUYzRVhCSVhDWHhlYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzMzNEI3MDZDN0YxNzIxNDA5MDQxNUJGNDVFNDQ1Njk2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb6osfLy7vCPxUCKAJDMywXQDrMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&oh=00_Afzls5SD6OMRHWXauHsDLp7YGOr4LA4q0mm0e80Mr6hTig&oe=69B5D0F1
+03-10 16:15:34.021  5031  5356 W HeroManager: 	Origin: ClipsDiscoverNetworkCache_prefetchVideos
+03-10 16:15:34.021  5031  5356 W HeroManager: 	PrefetchOrigin: UNKNOWN
+03-10 16:15:34.021  5031  5356 W HeroManager: 	DashMPD: 19095
+03-10 16:15:34.021  5031  5356 W HeroManager: 	Codec: av01.0.04M.08.0.111.01.01.01.0
+03-10 16:15:34.021  5031  5356 W HeroManager: 	liveLatency: -1
+03-10 16:15:34.021  5031  5356 W HeroManager: 	liveLatencyTolerance: -1
+03-10 16:15:34.021  5031  5356 W HeroManager: 	isSpherical: false
+03-10 16:15:34.021  5031  5356 W HeroManager: 	isSponsored: false
+03-10 16:15:34.021  5031  5356 W HeroManager: 	isAdBreak: false
+03-10 16:15:34.021  5031  5356 W HeroManager: 	isLiveTraceEnabled: false
+03-10 16:15:34.021  5031  5356 W HeroManager: 	renderMode: AUDIO_VIDEO
+03-10 16:15:34.021  5031  5356 W HeroManager: 	isBroadcast: false
+03-10 16:15:34.021  5031  5356 W HeroManager: 	contentType: GENERAL
+03-10 16:15:34.021  5031  5356 W HeroManager: 	isAudioDataListenerEnabled: false
+03-10 16:15:34.021  5031  5356 W HeroManager: 	liveViewerCount: -1, type: DASH_VOD
+03-10 16:15:34.047  5031  5356 W HeroManager: mediaPreload.prefetchInternal : source: Type: DASH_VOD
+03-10 16:15:34.047  5031  5356 W HeroManager: 	Id: 3844674165706554533_72254947370
+03-10 16:15:34.047  5031  5356 W HeroManager: 	Uri: https://instagram.fmaa5-1.fna.fbcdn.net/o1/v/t16/f2/m69/AQO56Prcp6_zuIyXbPWdP0PUbVqoM9ItSgjCWRvD2HlltBtFOZYuQKq5mp-iV2enXRpeIJFF3EuAhWOaLg8mYdrZ.mp4?strext=1&_nc_cat=108&_nc_oc=Adl32muIlhrfwg3dsYmMQ26JCjrjS_jGX7s97ANRLklrR2pGLoWfUWTeSkRwJ_rA8QovUBcGBYD2s4vT78yOiFYc&_nc_sid=5e9851&_nc_ht=instagram.fmaa5-1.fna.fbcdn.net&_nc_ohc=EXiDmf740K0Q7kNvwFiEjG1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4OTU2MDYzOTA0MTEzNzEsImFzc2V0X2FnZV9kYXlzIjo2LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=w7LDlRNtxx1-Z2af8PAZvA&_nc_ss=1a&_nc_zt=28&vs=6edcfcc38b88c332&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRlBfZVNhVC1Kck1zOTREQUJrMjB2dHoxR2tfYnNwVEFRQUYVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzExNDU5QzlEOTQ4OTkzNkQxOEVGOTdDNkMyMTg2NjlFX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbWwYbfsf3JPxUCKAJDMywXQCcAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&oh=00_AfyoDMUUmBUNls7JsK3HVSMam3OnrSSgustJZpcYiYgoZw&oe=69B5DAA8
+03-10 16:15:34.047  5031  5356 W HeroManager: 	Origin: ClipsDiscoverNetworkCache_prefetchVideos
+03-10 16:15:34.047  5031  5356 W HeroManager: 	PrefetchOrigin: UNKNOWN
+03-10 16:15:34.047  5031  5356 W HeroManager: 	DashMPD: 17416
+03-10 16:15:34.047  5031  5356 W HeroManager: 	Codec: av01.0.05M.08.0.111.01.01.01.0
+03-10 16:15:34.047  5031  5356 W HeroManager: 	liveLatency: -1
+03-10 16:15:34.047  5031  5356 W HeroManager: 	liveLatencyTolerance: -1
+03-10 16:15:34.047  5031  5356 W HeroManager: 	isSpherical: false
+03-10 16:15:34.047  5031  5356 W HeroManager: 	isSponsored: false
+03-10 16:15:34.047  5031  5356 W HeroManager: 	isAdBreak: false
+03-10 16:15:34.047  5031  5356 W HeroManager: 	isLiveTraceEnabled: false
+03-10 16:15:34.047  5031  5356 W HeroManager: 	renderMode: AUDIO_VIDEO
+03-10 16:15:34.047  5031  5356 W HeroManager: 	isBroadcast: false
+03-10 16:15:34.047  5031  5356 W HeroManager: 	contentType: GENERAL
+03-10 16:15:34.047  5031  5356 W HeroManager: 	isAudioDataListenerEnabled: false
+03-10 16:15:34.047  5031  5356 W HeroManager: 	liveViewerCount: -1, type: DASH_VOD
+03-10 16:15:34.050  5031  5356 W HeroManager: mediaPreload.prefetchInternal : source: Type: DASH_VOD
+03-10 16:15:34.050  5031  5356 W HeroManager: 	Id: 3808191577936630966_76669066307
+03-10 16:15:34.050  5031  5356 W HeroManager: 	Uri: https://instagram.fmaa5-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPrhGiv5g7n2S3XP-81CIk3oAaHrIfYs4rM0lkz15cxRg3Usm5ILDf4Jn48br1aja-dxsmOibzpOyViT828AasA1aNqfH6wINO7Z-s.mp4?_nc_cat=107&_nc_oc=AdkvmPnhxaH_5RpItzLRKVAMA8SDXVTWIzArd4ZqUGBEGV8mFm3nSpOTtsuxWbNU4DkSG9WpHRO4KzrHadK1_CFs&_nc_sid=5e9851&_nc_ht=instagram.fmaa5-1.fna.fbcdn.net&_nc_ohc=7uo4N4glSEsQ7kNvwGIdIKz&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTcwODYxMDYzNzIxNDcwMywiYXNzZXRfYWdlX2RheXMiOjU3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NDIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=w7LDlRNtxx1-Z2af8PAZvA&_nc_ss=1a&_nc_zt=28&vs=dfc108a3e792fa14&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85QTQ2QkY2Njk3RDk0MDJENDgyOUZENDE2MzlCODNBN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzA3MjYxMTkxMjA3MTE2XzM1OTMwODc3MDkzNTM2NDI1MjgubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJt7PuaGd_ogGFQIoAkMzLBdARWqfvnbItBgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&oh=00_AfyyiAsekAK7oGQlZ_cZkO6R1oSblsJ7XUTlioBpg3qhDw&oe=69B1C6EC
+03-10 16:15:34.050  5031  5356 W HeroManager: 	Origin: ClipsDiscoverNetworkCache_prefetchVideos
+03-10 16:15:34.050  5031  5356 W HeroManager: 	PrefetchOrigin: UNKNOWN
+03-10 16:15:34.050  5031  5356 W HeroManager: 	DashMPD: 22653
+03-10 16:15:34.050  5031  5356 W HeroManager: 	Codec: av01.0.01M.08.0.111.01.01.01.0
+03-10 16:15:34.050  5031  5356 W HeroManager: 	liveLatency: -1
+03-10 16:15:34.050  5031  5356 W HeroManager: 	liveLatencyTolerance: -1
+03-10 16:15:34.050  5031  5356 W HeroManager: 	isSpherical: false
+03-10 16:15:34.050  5031  5356 W HeroManager: 	isSponsored: false
+03-10 16:15:34.050  5031  5356 W HeroManager: 	isAdBreak: false
+03-10 16:15:34.050  5031  5356 W HeroManager: 	isLiveTraceEnabled: false
+03-10 16:15:34.050  5031  5356 W HeroManager: 	renderMode: AUDIO_VIDEO
+03-10 16:15:34.050  5031  5356 W HeroManager: 	isBroadcast: false
+03-10 16:15:34.050  5031  5356 W HeroManager: 	contentType: GENERAL
+03-10 16:15:34.050  5031  5356 W HeroManager: 	isAudioDataListenerEnabled: false
+03-10 16:15:34.050  5031  5356 W HeroManager: 	liveViewerCount: -1, type: DASH_VOD
+03-10 16:15:34.317  5031  5397 W SoLoader[NativeDeps]: Couldn't find libtorch-code-gen.so in native deps file
+03-10 16:15:34.317  5031  5397 W SoLoader[NativeDeps]: Falling back to custom ELF parsing when loading libtorch-code-gen.so, this can be slow
+03-10 16:15:34.364  5031  5409 E ActionQueryTaskListener: 0 onTaskComplete [true,false,] BACKGROUND modules: [pytorch] actions: [LOAD=[pytorch],COMPLETE_SUCCESS=[pytorch]]
+03-10 16:15:34.589  8224  8332 I BugleRcsEngine: Connected state: [1], networkType: [MOBILE] [CONTEXT thread_id=132973 ]
+03-10 16:15:34.590  8224  8370 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[9466accb-07de]>Handler" thread_id=132980 ]
+03-10 16:15:34.606  8224  8370 I BugleRcsEngine: Rcs is enabled from user settings: true [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=132980 ]
+03-10 16:15:35.081  5031  5397 W SoLoader[NativeDeps]: Couldn't find libtorchmerged_pytorch.so in native deps file
+03-10 16:15:35.081  5031  5397 W SoLoader[NativeDeps]: Falling back to custom ELF parsing when loading libtorchmerged_pytorch.so, this can be slow
+03-10 16:15:35.091  5883 21406 I NearbySharing: Network state changed: NetworkState(isRestricted=false, isOnline=true, isCongested=false, isMetered=true, isWifiConnected=false)
+03-10 16:15:35.297 27748 30971 I android.youtube: Background concurrent copying GC freed 12MB AllocSpace bytes, 148(5376KB) LOS objects, 36% free, 41MB/65MB, paused 101us,72us total 179.170ms
+03-10 16:15:35.398  5031  5397 E ActionQueryTaskListener: 1 onTaskStart BACKGROUND modules: [executorch] actions: [LOAD=[executorch],COMPLETE_SUCCESS=[executorch]]
+03-10 16:15:35.441  5031  5409 E ActionQueryTaskListener: 1 onLoadBatchStart BACKGROUND modules: [executorch] actions: [LOAD=[executorch],COMPLETE_SUCCESS=[executorch]]
+03-10 16:15:35.471  5031  5409 W FbVoltronModuleLoader: loadSplitWithRetry: main split=executorch checkDisk=false
+03-10 16:15:35.471  5031  5409 W SoLoader: Registering application split executorch split_executorch.apk
+03-10 16:15:35.494  5031  5409 W SoLoader: Prepending SoSource executorch-asset-libs: SuperpackSoSource[root = /data/data/com.instagram.android/modules/executorch_7f4bbc902595e12036c96be6ca7892a3be067ab0053f06a119f6137ddf387703/lib-compressed/arm64-v8a/896334170/asset-libs flags = 1 split = installed split:split_executorch.apk compressedPath = assets/executorch/libs.spo identity = executorch]
+03-10 16:15:35.564  5031  5409 W FbVoltronModuleLoader: Split loaded: executorch
+03-10 16:15:35.565  5031  5409 E ActionQueryTaskListener: 1 onLoadBatchComplete exception: null BACKGROUND modules: [executorch] actions: [LOAD=[executorch],COMPLETE_SUCCESS=[executorch]]
+03-10 16:15:35.590  5031  5397 I Mantle  : IGMantleJni::initHybrid is called.
+03-10 16:15:35.608  5031  5397 I Mantle  : IGMantleJni::IGMantleJni is called.
+03-10 16:15:36.066 26430 26430 W View    : requestLayout() improperly called by android.widget.FrameLayout{1ac3b46 V.E...... ......ID 0,0-55,30 #7f0a07b3 app:id/speed_container} during layout: running second layout pass
+03-10 16:15:36.121  5031  5595 E ActionQueryTaskListener: 1 onTaskComplete [true,false,] BACKGROUND modules: [executorch] actions: [LOAD=[executorch],COMPLETE_SUCCESS=[executorch]]
+03-10 16:15:36.140  5031  5409 W SoLoader[NativeDeps]: Couldn't find libdynamic_executorch.so in native deps file
+03-10 16:15:36.140  5031  5409 W SoLoader[NativeDeps]: Falling back to custom ELF parsing when loading libdynamic_executorch.so, this can be slow
+03-10 16:15:37.033  5031  5144 E msys    : E[N mns]_OnDiskCacheGetData(632)=>Start post callback cache refresh DNS resolution
+03-10 16:15:37.105  5031  5157 W stagram.android: JNI RegisterNativeMethods: attempt to register 0 native methods for com.facebook.traffic.nts.providers.background.BackgroundV2TaskSchedulerCommonImpl
+03-10 16:15:37.240  5031  5144 E msys    : E[N mns]_OnDiskCacheGetData(632)=>Start post callback cache refresh DNS resolution

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="premium_light_bg">#F7F9FC</color>
+    <color name="blue">#7ACAE8</color>
+    <color name="neon_cyan">#00BCD4</color>
+    <color name="text_secondary">#888888</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="stats_bg">#EEEEEE</color>
+    <color name="primary_blue">#1976D2</color>
+    <color name="input_background">#F5F5F5</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="dark_teal">#00796B</color>
+    <color name="light_grey">#BDBDBD</color>
+    <color name="bg_gradient_start">#E0F7FA</color>
+    <color name="bg_gradient_end">#FFFFFF</color>
+    <color name="sky_blue">#87CEEB</color>
+    <color name="teal_500">#009688</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="teal">#008080</color>
+    <color name="mint">#98FF98</color>
+    <color name="lavender">#E6E6FA</color>
+    <color name="peach">#FFDAB9</color>
+    <color name="cream">#FFFDD0</color>
+    <color name="medical_blue">#1976D2</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="soft_green">#66BB6A</color>
+    <color name="cool_gray">#B0BEC5</color>
+    <color name="ice_blue">#D0F0FD</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="info_blue">#2196F3</color>
+</resources>

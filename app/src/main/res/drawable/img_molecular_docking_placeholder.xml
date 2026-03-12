@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Background: Vibrant Purple to Blue Gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#6200EA"
+                android:endColor="#00B0FF"
+                android:angle="135"
+                android:type="linear" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Decorative Circle (Top-Left) -->
+    <item
+        android:width="150dp"
+        android:height="150dp"
+        android:left="-30dp"
+        android:top="-30dp">
+        <shape android:shape="oval">
+            <solid android:color="#20FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Decorative Circle (Bottom-Right) -->
+    <item
+        android:width="100dp"
+        android:height="100dp"
+        android:right="-20dp"
+        android:bottom="-20dp"
+        android:gravity="bottom|right">
+        <shape android:shape="oval">
+            <solid android:color="#20FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

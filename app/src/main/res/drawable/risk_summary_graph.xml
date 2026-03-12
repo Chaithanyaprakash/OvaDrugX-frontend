@@ -1,0 +1,81 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="250dp"
+    android:viewportWidth="400"
+    android:viewportHeight="250">
+
+    <!-- Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h400v250h-400z"/>
+
+    <!-- Connecting Lines (Circuit/Network style) -->
+    <path
+        android:strokeAlpha="0.5"
+        android:strokeColor="#009688"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M200,125 L100,125 L80,150 M200,125 L300,125 L320,100 M200,125 L200,50 L180,30 M200,125 L200,200 L220,220 M150,125 L150,180 M250,125 L250,80"/>
+
+    <path
+        android:strokeAlpha="0.5"
+        android:strokeColor="#FF9800"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M200,125 L120,80 L100,80 M200,125 L280,170 L300,170"/>
+
+    <!-- Bar Charts Left -->
+    <path
+        android:fillColor="#4DB6AC"
+        android:pathData="M60,160h15v40h-15z"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M80,140h15v60h-15z"/>
+    <path
+        android:fillColor="#4DB6AC"
+        android:pathData="M100,120h15v80h-15z"/>
+
+    <!-- Bar Charts Right -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M285,150h15v50h-15z"/>
+    <path
+        android:fillColor="#4DB6AC"
+        android:pathData="M305,130h15v70h-15z"/>
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M325,160h15v40h-15z"/>
+
+    <!-- Upward Arrows -->
+    <path
+        android:fillColor="#00ACC1"
+        android:pathData="M50,130 Q100,120 130,100 L125,95 L140,95 L140,110 L135,105 Q100,130 50,140 Z"/>
+    <path
+        android:fillColor="#00ACC1"
+        android:pathData="M350,130 Q300,120 270,100 L275,95 L260,95 L260,110 L265,105 Q300,130 350,140 Z"/>
+
+    <!-- Central Button/Label Background -->
+    <path
+        android:fillColor="#26A69A"
+        android:pathData="M130,105h140a10,10 0 0 1 10,10v40a10,10 0 0 1 -10,10h-140a10,10 0 0 1 -10,-10v-40a10,10 0 0 1 10,-10z"/>
+    
+    <!-- "Risk Summary" Text Approximation (using lines as vector text is complex) -->
+    <!-- R -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M150,120v20 M150,120h10c2,0 2,10 0,10h-10 M155,130L160,140"/>
+    <!-- i -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M165,125v15 M165,120v2"/>
+    <!-- s -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M175,120h-5v10h5v10h-5"/>
+    <!-- k -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M185,120v20 M185,130l10,-10 M185,130l10,10"/>
+    
+    <!-- S -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M210,120h-5v10h5v10h-5"/>
+    <!-- u -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M220,120v15c0,2 2,5 5,5s5,-3 5,-5v-15"/>
+    <!-- m -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M235,140v-20l5,5l5,-5v20"/>
+    <!-- m -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:pathData="M250,140v-20l5,5l5,-5v20"/>
+
+</vector>

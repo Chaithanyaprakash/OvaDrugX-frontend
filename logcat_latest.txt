@@ -1,0 +1,11 @@
+--------- beginning of main
+03-10 16:18:45.672 20241 20255 W soft.appmanager: Suspending all threads took: 28.140ms
+03-10 16:18:45.933 26430 26430 W View    : requestLayout() improperly called by android.widget.FrameLayout{1ac3b46 V.E...... ......ID 0,0-55,30 #7f0a07b3 app:id/speed_container} during layout: running second layout pass
+03-10 16:18:46.043 20241  5934 W soft.appmanager: Weak pointer dereference blocked for 337 milliseconds.
+03-10 16:18:46.329 20241 20255 I soft.appmanager: NativeAlloc concurrent copying GC freed 5515KB AllocSpace bytes, 48(12MB) LOS objects, 49% free, 22MB/45MB, paused 733us,29.177ms total 3.580s
+03-10 16:18:46.530  9855  9885 I WM-WorkerWrapper: Worker result FAILURE for Work [ id=70693fa5-f167-4ddc-a5e5-31ad6dcb7b46, tags={ com.avast.android.burger.internal.scheduling.DeviceInfoWorker } ]
+03-10 16:18:47.266  5883  6090 I NearbyDiscovery: (REDACTED) BloomFilterAdvManager: Detected bloom filter but too far away, ignoring. %sm, %s
+03-10 16:18:48.836  5883  8556 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+03-10 16:18:48.836  5883  8556 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing}
+03-10 16:18:48.959 26430 26430 W View    : requestLayout() improperly called by android.widget.FrameLayout{1ac3b46 V.E...... ......ID 0,0-55,30 #7f0a07b3 app:id/speed_container} during layout: running second layout pass
+03-10 16:18:51.960 26430 26430 W View    : requestLayout() improperly called by android.widget.FrameLayout{1ac3b46 V.E...... ......ID 0,0-55,30 #7f0a07b3 app:id/speed_container} during layout: running second layout pass

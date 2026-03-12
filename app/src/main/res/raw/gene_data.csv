@@ -1,0 +1,11 @@
+Gene Symbol,Protein Name,Function,Associated Disease
+TP53,Tumor Protein p53,Regulates cell division and apoptosis,Cancer (various)
+BRCA1,Breast Cancer Type 1 Susceptibility Protein,DNA repair and cell cycle control,Breast/Ovarian Cancer
+BRCA2,Breast Cancer Type 2 Susceptibility Protein,DNA repair and recombination,Breast/Ovarian Cancer
+EGFR,Epidermal Growth Factor Receptor,Cell growth and signaling,Lung Cancer
+HER2,Human Epidermal Growth Factor Receptor 2,Cell proliferation and survival,Breast Cancer
+AKT1,AKT Serine/Threonine Kinase 1,Cell survival and metabolism,Proteus Syndrome
+PTEN,Phosphatase and Tensin Homolog,Tumor suppressor,Cowden Syndrome
+MYC,Myc Proto-Oncogene Protein,Cell cycle progression and apoptosis,Burkitt Lymphoma
+KRAS,K-Ras,Cell signaling and proliferation,Pancreatic/Colorectal Cancer
+VEGFA,Vascular Endothelial Growth Factor A,Angiogenesis,Cancer/Macular Degeneration

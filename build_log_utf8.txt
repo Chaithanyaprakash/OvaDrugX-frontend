@@ -1,0 +1,31 @@
+﻿Initialized native services in: C:\Users\chait\.gradle\native
+Initialized jansi services in: C:\Users\chait\.gradle\native
+The client will now receive all logging from the daemon (pid: 12916). The daemon log file: C:\Users\chait\.gradle\daemon\9.1.0\daemon-12916.out.log
+Starting 10th build in daemon [uptime: 1 hrs 43 mins 59.291 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 4 worker leases.
+Encryption key source: default Gradle keystore (pkcs12)
+Now considering [C:\Users\chait\AndroidStudioProjects\OvaDrugX] as hierarchies to watch
+Calculating task graph as configuration cache cannot be reused because file 'gradle\libs.versions.toml' has changed.
+Now considering [C:\Users\chait\AndroidStudioProjects\OvaDrugX] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\chait\AndroidStudioProjects\OvaDrugX\settings.gradle.kts'.
+Caching disabled for generation of dependency accessors for libs because:
+  Build cache is disabled
+  Not worth caching.
+Projects loaded. Root project using build file 'C:\Users\chait\AndroidStudioProjects\OvaDrugX\build.gradle.kts'.
+Included projects: [root project 'OvaDrugX', project ':app']
+
+> Configure project :
+Evaluating root project 'OvaDrugX' using build file 'C:\Users\chait\AndroidStudioProjects\OvaDrugX\build.gradle.kts'.
+Caching disabled for Kotlin DSL version catalog plugin accessors for classpath '4668a2c454f61bb46fcad35a01ef0c8d' because:
+  Build cache is disabled
+Caching disabled for Kotlin DSL plugin specs accessors for classpath '4668a2c454f61bb46fcad35a01ef0c8d' because:
+  Build cache is disabled
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage1) because:
+  Build cache is disabled
+
+See the complete report at file:///C:/Users/chait/AndroidStudioProjects/OvaDrugX/build/reports/configuration-cache/3z17git1ucoaghqtp3zy1qmas/43e8q580p6tgjwoar9aq6aj5m/configuration-cache-report.html
+Watched directory hierarchies: [C:\Users\chait\AndroidStudioProjects\OvaDrugX]
+Configuration cache entry stored.
