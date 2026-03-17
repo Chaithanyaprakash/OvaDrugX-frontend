@@ -23,36 +23,42 @@ class ProteinsActivity : AppCompatActivity() {
     }
 
     private fun loadScreenedProteins() {
-        val sharedPrefs = getSharedPreferences("ML_GLOBAL_STATE", android.content.Context.MODE_PRIVATE)
-        val genes = sharedPrefs.getString("HISTORY_GENES", "") ?: ""
-        val scores = sharedPrefs.getString("HISTORY_SCORES", "") ?: ""
-        val dates = sharedPrefs.getString("HISTORY_DATES", "") ?: ""
+        try {
+            val sharedPrefs = getSharedPreferences("ML_GLOBAL_STATE", android.content.Context.MODE_PRIVATE)
+            val genes = sharedPrefs.getString("HISTORY_GENES", "") ?: ""
+            val scores = sharedPrefs.getString("HISTORY_SCORES", "") ?: ""
+            val dates = sharedPrefs.getString("HISTORY_DATES", "") ?: ""
 
-        if (genes.isEmpty()) return
+            if (genes.isEmpty()) return
 
-        val geneList = genes.split(",").filter { it.isNotEmpty() }
-        val scoreList = scores.split(",").filter { it.isNotEmpty() }
-        val dateList = dates.split(",").filter { it.isNotEmpty() }
+            val geneList = genes.split(",").filter { it.isNotEmpty() }
+            val scoreList = scores.split(",").filter { it.isNotEmpty() }
+            val dateList = dates.split(",").filter { it.isNotEmpty() }
 
-        val container = findViewById<android.widget.LinearLayout>(R.id.container_screened_proteins)
-        container.visibility = View.VISIBLE
+            val container = findViewById<android.widget.LinearLayout>(R.id.container_screened_proteins)
+            container.visibility = View.VISIBLE
+            container.removeAllViews() // Ensure it's empty
 
-        for (i in geneList.indices) {
-            val itemView = layoutInflater.inflate(R.layout.item_screened_protein, container, false)
-            
-            val tvName = itemView.findViewById<android.widget.TextView>(R.id.tv_protein_name)
-            val tvDate = itemView.findViewById<android.widget.TextView>(R.id.tv_screening_date)
-            val tvScore = itemView.findViewById<android.widget.TextView>(R.id.tv_compatibility_score)
+            for (i in geneList.indices) {
+                val itemView = layoutInflater.inflate(R.layout.item_screened_protein, container, false)
+                
+                val tvName = itemView.findViewById<android.widget.TextView>(R.id.tv_protein_name)
+                val tvDate = itemView.findViewById<android.widget.TextView>(R.id.tv_screening_date)
+                val tvScore = itemView.findViewById<android.widget.TextView>(R.id.tv_compatibility_score)
 
-            tvName.text = geneList[i]
-            
-            val scoreVal = scoreList.getOrNull(i)?.toDoubleOrNull() ?: 0.0
-            tvScore.text = "${scoreVal.toInt()}%"
+                tvName.text = geneList[i]
+                
+                val scoreVal = scoreList.getOrNull(i)?.toDoubleOrNull() ?: 0.0
+                tvScore.text = "${scoreVal.toInt()}%"
 
-            val timestamp = dateList.getOrNull(i)?.toLongOrNull() ?: 0L
-            tvDate.text = if (timestamp > 0) getRelativeTime(timestamp) else "Recently"
+                val timestamp = dateList.getOrNull(i)?.toLongOrNull() ?: 0L
+                tvDate.text = if (timestamp > 0) getRelativeTime(timestamp) else "Recently"
 
-            container.addView(itemView)
+                container.addView(itemView)
+            }
+        } catch (e: Exception) {
+            android.widget.Toast.makeText(this, "Error loading protein list: ${e.message}", android.widget.Toast.LENGTH_SHORT).show()
+            e.printStackTrace()
         }
     }
 

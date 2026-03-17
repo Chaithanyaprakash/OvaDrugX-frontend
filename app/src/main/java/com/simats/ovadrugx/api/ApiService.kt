@@ -39,6 +39,9 @@ interface ApiService {
     @POST("update-account")
     fun updateAccount(@Body request: UpdateAccountRequest): Call<GenericResponse>
 
+    @POST("support-chat")
+    fun supportChat(@Body request: SupportChatRequest): Call<SupportChatResponse>
+
     // --- Future AI Data Endpoints Placeholder ---
 
     /**

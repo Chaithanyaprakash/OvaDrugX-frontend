@@ -54,6 +54,12 @@ class UpdateAccountActivity : AppCompatActivity() {
         val genders = arrayOf("Male", "Female", "Others")
         val adapter = android.widget.ArrayAdapter(this, android.R.layout.simple_list_item_1, genders)
         binding.etGender.setAdapter(adapter)
+        
+        // Show dropdown when clicked or focused
+        binding.etGender.setOnClickListener { binding.etGender.showDropDown() }
+        binding.etGender.setOnFocusChangeListener { _, hasFocus -> 
+            if (hasFocus) binding.etGender.showDropDown() 
+        }
     }
 
     private fun loadCurrentData(email: String) {
@@ -67,9 +73,10 @@ class UpdateAccountActivity : AppCompatActivity() {
                         val data = response.body()?.data
                         if (data != null) {
                             binding.etFullName.setText(data.full_name)
-                            binding.etGender.setText(data.gender)
+                            binding.etGender.setText(data.gender, false)
                             binding.etDepartment.setText(data.department)
                             binding.etLicenseNumber.setText(data.license_number)
+                            binding.etMobile.setText(data.mobile ?: "")
                         }
                     } else {
                         Toast.makeText(this@UpdateAccountActivity, "Failed to load current data", Toast.LENGTH_SHORT).show()
@@ -84,6 +91,7 @@ class UpdateAccountActivity : AppCompatActivity() {
 
     private fun saveChanges(email: String) {
         val fullName = binding.etFullName.text.toString().trim()
+        val mobile = binding.etMobile.text.toString().trim()
         val gender = binding.etGender.text.toString().trim()
         val department = binding.etDepartment.text.toString().trim()
         val licenseNumber = binding.etLicenseNumber.text.toString().trim()
@@ -98,11 +106,13 @@ class UpdateAccountActivity : AppCompatActivity() {
             full_name = fullName,
             gender = gender,
             department = department,
-            license_number = licenseNumber
+            license_number = licenseNumber,
+            mobile = mobile
         )
 
         binding.btnSaveChanges.isEnabled = false
         binding.btnSaveChanges.text = "Saving..."
+        Toast.makeText(this, "Updating account...", Toast.LENGTH_SHORT).show()
 
         com.simats.ovadrugx.api.RetrofitClient.instance.updateAccount(request)
             .enqueue(object : retrofit2.Callback<com.simats.ovadrugx.model.GenericResponse> {
@@ -116,16 +126,22 @@ class UpdateAccountActivity : AppCompatActivity() {
                     if (response.isSuccessful && response.body()?.status == "success") {
                         
                         // Sync all updated fields to local session cache for immediate UI updates
-                        val sharedPreferences = getSharedPreferences("UserSession", Context.MODE_PRIVATE)
-                        sharedPreferences.edit().apply {
+                        val sharedSharedPreferences = getSharedPreferences("UserSession", Context.MODE_PRIVATE)
+                        sharedSharedPreferences.edit().apply {
                             putString("full_name", fullName)
-                            putString("gender", gender)
                             putString("department", department)
+                            putString("gender", gender)
                             putString("license_number", licenseNumber)
+                            putString("mobile", mobile)
                             apply()
                         }
 
-                        Toast.makeText(this@UpdateAccountActivity, "Account updated in database successfully!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@UpdateAccountActivity, "Account updated successfully!", Toast.LENGTH_SHORT).show()
+                        
+                        // Redirect to Account Information
+                        val intent = android.content.Intent(this@UpdateAccountActivity, AccountInformationActivity::class.java)
+                        intent.flags = android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP or android.content.Intent.FLAG_ACTIVITY_SINGLE_TOP
+                        startActivity(intent)
                         finish()
                     } else {
                         Toast.makeText(this@UpdateAccountActivity, response.body()?.message ?: "Update failed", Toast.LENGTH_SHORT).show()

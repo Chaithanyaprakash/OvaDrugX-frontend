@@ -99,7 +99,8 @@
                             android:backgroundTint="#F5F5F5"
                             android:paddingHorizontal="16dp"
                             android:inputType="textPersonName"
-                            android:hint="Full Name"/>
+                            android:hint="Full Name"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -125,7 +126,35 @@
                             android:backgroundTint="#F5F5F5"
                             android:paddingHorizontal="16dp"
                             android:inputType="textEmailAddress"
-                            android:hint="Email"/>
+                            android:hint="Email"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp"/>
+
+                        <EditText
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_rounded_border"
+                            android:backgroundTint="#F5F5F5"
+                            android:paddingHorizontal="16dp"
+                            android:inputType="phone"
+                            android:hint="Mobile Number"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -151,7 +180,7 @@
                             app:boxStrokeWidth="0dp"
                             app:boxStrokeWidthFocused="0dp">
 
-                            <AutoCompleteTextView
+                            <com.google.android.material.textfield.MaterialAutoCompleteTextView
                                 android:id="@+id/et_gender"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
@@ -160,7 +189,8 @@
                                 android:paddingHorizontal="16dp"
                                 android:inputType="none"
                                 android:hint="Select Gender"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                android:textColor="@color/black"/>
 
                         </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
@@ -188,7 +218,8 @@
                             android:backgroundTint="#F5F5F5"
                             android:paddingHorizontal="16dp"
                             android:inputType="text"
-                            android:hint="Department"/>
+                            android:hint="Department"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -214,7 +245,8 @@
                             android:backgroundTint="#F5F5F5"
                             android:paddingHorizontal="16dp"
                             android:inputType="text"
-                            android:hint="License Number"/>
+                            android:hint="License Number"
+                            android:textColor="@color/black"/>
                     </LinearLayout>
 
                 </LinearLayout>

@@ -13,23 +13,67 @@ class ProfileActivity : AppCompatActivity() {
         setupBottomNavigation()
         setupMenuActions()
 
-        // Load User Data
-        val sharedPreferences = getSharedPreferences("UserSession", android.content.Context.MODE_PRIVATE)
-        val fullName = sharedPreferences.getString("full_name", "User")
-        
-        val tvName = findViewById<android.widget.TextView>(R.id.tv_name)
-        tvName.text = fullName
-
-        val imgProfile = findViewById<android.widget.ImageView>(R.id.img_profile)
-        if (isFemaleName(fullName ?: "")) {
-            imgProfile.setImageResource(R.drawable.ic_profile_female)
-        } else {
-            imgProfile.setImageResource(R.drawable.ic_profile_male)
-        }
-
         findViewById<View>(R.id.btn_notifications).setOnClickListener {
             startActivity(Intent(this, NotificationsActivity::class.java))
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        loadUserProfile()
+    }
+
+    private fun loadUserProfile() {
+        val sharedPreferences = getSharedPreferences("UserSession", android.content.Context.MODE_PRIVATE)
+        val email = sharedPreferences.getString("email", "") ?: ""
+
+        if (email.isEmpty()) return
+
+        com.simats.ovadrugx.api.RetrofitClient.instance
+            .getAccount(com.simats.ovadrugx.model.GetAccountRequest(email))
+            .enqueue(object : retrofit2.Callback<com.simats.ovadrugx.model.GetAccountResponse> {
+                override fun onResponse(
+                    call: retrofit2.Call<com.simats.ovadrugx.model.GetAccountResponse>,
+                    response: retrofit2.Response<com.simats.ovadrugx.model.GetAccountResponse>
+                ) {
+                    if (response.isSuccessful && response.body()?.status == "success") {
+                        val data = response.body()?.data
+                        if (data != null) {
+                            val fullName = data.full_name
+                            val department = data.department
+
+                            findViewById<android.widget.TextView>(R.id.tv_name).text = fullName
+                            findViewById<android.widget.TextView>(R.id.tv_department).text = department
+
+                            val imgProfile = findViewById<android.widget.ImageView>(R.id.img_profile)
+                            if (isFemaleName(fullName)) {
+                                imgProfile.setImageResource(R.drawable.ic_profile_female)
+                            } else {
+                                imgProfile.setImageResource(R.drawable.ic_profile_male)
+                            }
+
+                            // Sync to SharedPreferences for other screens
+                            sharedPreferences.edit().apply {
+                                putString("full_name", fullName)
+                                putString("department", department)
+                                putString("gender", data.gender)
+                                apply()
+                            }
+                        }
+                    }
+                }
+
+                override fun onFailure(
+                    call: retrofit2.Call<com.simats.ovadrugx.model.GetAccountResponse>,
+                    t: Throwable
+                ) {
+                    // Fallback to cached data if network fails
+                    val fullName = sharedPreferences.getString("full_name", "User")
+                    val department = sharedPreferences.getString("department", "Oncologist & Lead Researcher")
+                    findViewById<android.widget.TextView>(R.id.tv_name).text = fullName
+                    findViewById<android.widget.TextView>(R.id.tv_department).text = department
+                }
+            })
     }
 
     private fun isFemaleName(fullName: String): Boolean {

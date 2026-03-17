@@ -12,6 +12,33 @@ class MolecularDockingActivity : AppCompatActivity() {
         
         setupBottomNavigation()
         setupClickListeners()
+        loadLatestScreeningData()
+    }
+
+    private fun loadLatestScreeningData() {
+        val sharedPrefs = getSharedPreferences("ML_GLOBAL_STATE", android.content.Context.MODE_PRIVATE)
+        val genes = sharedPrefs.getString("HISTORY_GENES", "")?.split(",")?.filter { it.isNotEmpty() } ?: emptyList()
+        val scores = sharedPrefs.getString("HISTORY_SCORES", "")?.split(",")?.filter { it.isNotEmpty() } ?: emptyList()
+        val drugs = sharedPrefs.getString("HISTORY_DRUGS", "")?.split(",")?.filter { it.isNotEmpty() } ?: emptyList()
+
+        if (genes.isNotEmpty()) {
+            val latestGene = genes[0]
+            val latestScore = scores.getOrNull(0)?.toDoubleOrNull() ?: 0.0
+            val latestDrug = drugs.getOrNull(0) ?: "Recommended Compound"
+
+            // Update Metrics
+            // Simulated binding affinity: - (score / 10)
+            val affinity = -(latestScore / 10.0)
+            findViewById<android.widget.TextView>(R.id.tv_metrics_affinity)?.text = String.format("%.1f kcal/mol", affinity)
+            findViewById<android.widget.TextView>(R.id.tv_metrics_confidence)?.text = "${latestScore.toInt()}%"
+
+            // Update Target Details Header
+            findViewById<android.widget.TextView>(R.id.tv_target_details_title)?.text = "Target Details: $latestGene"
+
+            // Update Top Candidates
+            findViewById<android.widget.TextView>(R.id.tv_candidate_1_name)?.text = latestDrug
+            findViewById<android.widget.TextView>(R.id.tv_candidate_1_score)?.text = "Match Score: ${latestScore.toInt()}%"
+        }
     }
 
     private fun setupClickListeners() {

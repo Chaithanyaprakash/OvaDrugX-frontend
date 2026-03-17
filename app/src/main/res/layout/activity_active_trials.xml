@@ -103,10 +103,11 @@
                         android:orientation="vertical">
                         
                         <TextView
+                            android:id="@+id/tv_trial_1_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="OX-779"
-                            android:textSize="16sp"
+                            android:textSize="18sp"
                             android:textStyle="bold"
                             android:textColor="@color/black"/>
 
@@ -116,6 +117,29 @@
                             android:text="Screening"
                             android:textSize="12sp"
                             android:textColor="@color/text_secondary"/>
+
+                        <TextView
+                            android:id="@+id/tv_trial_1_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Small Molecule"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_trial_1_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Target: Active"
+                            android:textColor="#4CAF50"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/bg_rounded_border"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            app:backgroundTint="#E8F5E9"/>
                     </LinearLayout>
 
                      <LinearLayout
@@ -125,6 +149,7 @@
                         android:gravity="end">
 
                         <ProgressBar
+                            android:id="@+id/pb_trial_1_progress"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="match_parent"
                             android:layout_height="4dp"
@@ -132,6 +157,7 @@
                             android:progressTint="@color/black" />
                          
                          <TextView
+                             android:id="@+id/tv_trial_1_progress_text"
                              android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
                              android:text="25%"
@@ -189,6 +215,20 @@
                             android:text="Binding"
                             android:textSize="12sp"
                             android:textColor="@color/text_secondary"/>
+
+                        <TextView
+                            android:id="@+id/tv_trial_2_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Target: Inactive"
+                            android:textColor="#9E9E9E"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/bg_rounded_border"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            app:backgroundTint="#F5F5F5"/>
                     </LinearLayout>
 
                      <LinearLayout
@@ -262,6 +302,20 @@
                             android:text="Molecular Dynamics"
                             android:textSize="12sp"
                             android:textColor="@color/text_secondary"/>
+
+                        <TextView
+                            android:id="@+id/tv_trial_3_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Target: Active"
+                            android:textColor="#4CAF50"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/bg_rounded_border"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            app:backgroundTint="#E8F5E9"/>
                     </LinearLayout>
 
                      <LinearLayout
@@ -335,6 +389,20 @@
                             android:text="Binding Affinity"
                              android:textSize="12sp"
                             android:textColor="@color/text_secondary"/>
+
+                        <TextView
+                            android:id="@+id/tv_trial_4_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Target: Inactive"
+                            android:textColor="#9E9E9E"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/bg_rounded_border"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            app:backgroundTint="#F5F5F5"/>
                     </LinearLayout>
 
                      <LinearLayout
@@ -408,6 +476,20 @@
                             android:text="Validation"
                             android:textSize="12sp"
                             android:textColor="@color/text_secondary"/>
+
+                        <TextView
+                            android:id="@+id/tv_trial_5_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Target: Completed"
+                            android:textColor="#2196F3"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:background="@drawable/bg_rounded_border"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            app:backgroundTint="#E3F2FD"/>
                     </LinearLayout>
 
                      <LinearLayout

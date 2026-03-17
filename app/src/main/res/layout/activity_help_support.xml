@@ -42,29 +42,7 @@
             android:orientation="vertical"
             android:padding="24dp">
 
-            <!-- Search Bar -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                app:cardCornerRadius="25dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="@color/white">
-                
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@null"
-                    android:hint="Search help database"
-                    android:textColorHint="#9E9E9E"
-                    android:textColor="@color/black"
-                    android:paddingStart="48dp"
-                    android:paddingEnd="16dp"
-                    android:drawableStart="@drawable/ic_search"
-                    android:drawablePadding="12dp"
-                    android:drawableTint="#9E9E9E"
-                    android:textSize="14sp"/>
-            </androidx.cardview.widget.CardView>
+
 
             <!-- FAQs Header -->
             <TextView
@@ -93,6 +71,7 @@
                     android:padding="8dp">
 
                     <RelativeLayout
+                        android:id="@+id/btnFaq1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
@@ -117,6 +96,7 @@
                     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0" android:layout_marginHorizontal="12dp"/>
 
                     <RelativeLayout
+                        android:id="@+id/btnFaq2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
@@ -141,6 +121,7 @@
                     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0" android:layout_marginHorizontal="12dp"/>
 
                     <RelativeLayout
+                        android:id="@+id/btnFaq3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
@@ -165,6 +146,7 @@
                     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F0F0F0" android:layout_marginHorizontal="12dp"/>
 
                     <RelativeLayout
+                        android:id="@+id/btnFaq4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="12dp"
@@ -320,10 +302,10 @@
                 android:layout_height="56dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/bg_rounded_border"
-                android:backgroundTint="#87CEEB"
+                android:backgroundTint="@color/primary_blue"
                 android:text="Contact Technical Support"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

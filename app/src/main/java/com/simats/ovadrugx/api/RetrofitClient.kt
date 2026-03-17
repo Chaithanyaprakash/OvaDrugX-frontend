@@ -9,10 +9,10 @@ import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit
 
 object RetrofitClient {
-    // DETECTED IP: 10.191.42.11 (Your Computer's IP)
+    // DETECTED IP: 10.117.16.11 (Your Computer's IP)
     // Use this for Real Device testing. (Ensure Phone and PC are on same Wi-Fi)
     // For Emulator, you can use http://10.0.2.2:5000/
-    private const val BASE_URL = "http://10.191.42.11:5000/"
+    private const val BASE_URL = "http://10.117.16.11:5000/"
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY

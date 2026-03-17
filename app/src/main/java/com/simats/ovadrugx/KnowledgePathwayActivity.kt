@@ -94,7 +94,10 @@ class KnowledgePathwayActivity : AppCompatActivity() {
                 setPadding(0, (14 * resources.displayMetrics.density).toInt(), 0, (14 * resources.displayMetrics.density).toInt())
                 isClickable = true
                 isFocusable = true
-                setBackgroundResource(android.R.attr.selectableItemBackground)
+                val outValue = android.util.TypedValue()
+                this@KnowledgePathwayActivity.theme.resolveAttribute(android.R.attr.selectableItemBackground, outValue, true)
+                setBackgroundResource(outValue.resourceId)
+                
                 setOnClickListener {
                     startActivity(Intent(this@KnowledgePathwayActivity, DrugsActivity::class.java))
                 }

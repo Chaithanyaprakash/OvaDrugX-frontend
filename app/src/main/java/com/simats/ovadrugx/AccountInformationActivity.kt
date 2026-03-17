@@ -50,6 +50,7 @@ class AccountInformationActivity : AppCompatActivity() {
         binding.etEmail.setText(email)
         binding.tvProfileName.text = "Loading..."
         binding.etFullName.setText("...")
+        binding.etMobile.setText("...")
         binding.etGender.setText("...")
         binding.etDepartment.setText("...")
         binding.etLicenseNumber.setText("...")
@@ -67,9 +68,11 @@ class AccountInformationActivity : AppCompatActivity() {
                             if (data != null) {
                                 binding.tvProfileName.text = data.full_name
                                 binding.etFullName.setText(data.full_name)
+                                binding.etEmail.setText(email) // Email is from session
                                 binding.etGender.setText(data.gender)
                                 binding.etDepartment.setText(data.department)
                                 binding.etLicenseNumber.setText(data.license_number)
+                                binding.etMobile.setText(data.mobile ?: "")
 
                                 if (isFemaleName(data.full_name)) {
                                     binding.ivProfileImage.setImageResource(R.drawable.ic_profile_female)
@@ -115,6 +118,7 @@ class AccountInformationActivity : AppCompatActivity() {
     private fun setFieldsEnabled(enabled: Boolean) {
         binding.etFullName.isEnabled = enabled
         binding.etEmail.isEnabled = enabled
+        binding.etMobile.isEnabled = enabled
         binding.etGender.isEnabled = enabled
         binding.etDepartment.isEnabled = enabled
         binding.etLicenseNumber.isEnabled = enabled

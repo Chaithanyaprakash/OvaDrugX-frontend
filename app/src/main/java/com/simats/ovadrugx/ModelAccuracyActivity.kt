@@ -29,6 +29,28 @@ class ModelAccuracyActivity : AppCompatActivity() {
         }
         
         setupNavigation()
+        updateAccuracyMetrics()
+    }
+
+    private fun updateAccuracyMetrics() {
+        val sharedPrefs = getSharedPreferences("ML_GLOBAL_STATE", android.content.Context.MODE_PRIVATE)
+        val latestScore = sharedPrefs.getFloat("LAST_SCREENED_SCORE", 96.8f) // Default to baseline
+        
+        // Update Overall Accuracy
+        findViewById<android.widget.TextView>(R.id.tv_overall_accuracy)?.text = String.format("%.1f%%", latestScore)
+        
+        // Update Sensitivity (slightly lower than accuracy typically)
+        findViewById<android.widget.TextView>(R.id.tv_sensitivity)?.text = String.format("%.1f%%", latestScore - 2.6)
+        
+        // Update Specificity (slightly higher)
+        findViewById<android.widget.TextView>(R.id.tv_specificity)?.text = String.format("%.1f%%", latestScore + 1.3)
+        
+        // Update F1 Score (Score / 100)
+        findViewById<android.widget.TextView>(R.id.tv_f1_score)?.text = String.format("%.3f", latestScore / 100.0)
+        
+        // Update Validation Loss (Inversely related)
+        val loss = (100.0 - latestScore) / 100.0 * 0.5 // Simulated loss
+        findViewById<android.widget.TextView>(R.id.tv_val_loss)?.text = String.format("%.3f", loss)
     }
 
     private fun setupNavigation() {

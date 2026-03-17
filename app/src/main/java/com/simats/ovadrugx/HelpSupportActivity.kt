@@ -30,6 +30,20 @@ class HelpSupportActivity : AppCompatActivity() {
             startChat("Bug Report")
         }
 
+        // FAQs
+        findViewById<android.view.View>(R.id.btnFaq1).setOnClickListener {
+            startChat("How to use the drug screening tool?")
+        }
+        findViewById<android.view.View>(R.id.btnFaq2).setOnClickListener {
+            startChat("What are the target discovery methods?")
+        }
+        findViewById<android.view.View>(R.id.btnFaq3).setOnClickListener {
+            startChat("How to interpret the results?")
+        }
+        findViewById<android.view.View>(R.id.btnFaq4).setOnClickListener {
+            startChat("Troubleshooting common issues")
+        }
+
         // Bottom Navigation
         setupBottomNavigation()
     }
